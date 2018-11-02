@@ -5,7 +5,7 @@ var fs = require("fs");
 var sass = require("gulp-sass");
 var server = require("gulp-webserver");
 var swiperData = require("./src/data/swiper.json");
-console.log(swiperData);
+var foodData = require("./src/data/food.json");
 gulp.task("loadSource", function() {
     return gulp.src("./src/scss/index.scss")
         .pipe(sass())
@@ -25,6 +25,8 @@ gulp.task("meituandev", function() {
                 if (pathname === "/api/swiper") {
                     // 接口
                     res.end(JSON.stringify({ code: 0, data: swiperData }))
+                } else if (pathname === "/api/foodList") {
+                    res.end(JSON.stringify({ code: 0, data: foodData }))
                 } else {
                     // 文件
                     pathname = pathname === "/" ? "index.html" : pathname;

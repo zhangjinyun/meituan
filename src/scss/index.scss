@@ -57,6 +57,7 @@ section {
     @include flex;
     overflow: hidden;
     position: relative;
+    background: #F0EFED;
     .content {
         width: 100%;
         .refresh,
@@ -66,7 +67,7 @@ section {
             line-height: pxTorem(40px);
             text-align: center;
             font-size: pxTorem(16px);
-            background: #eee;
+            background: #fff;
             color: #06C1AE;
         }
         .refresh {
@@ -79,11 +80,11 @@ section {
         }
         .pic {
             width: 100%;
-            border-bottom: 2px solid #ccc;
         }
         .swiper-container {
             width: 100%;
             height: pxTorem(180px);
+            background: #fff;
             .swiper-wrapper,
             .swiper-slide {
                 width: 100%;
@@ -117,6 +118,61 @@ section {
                 }
                 .swiper-pagination-bullet-active {
                     background: #06C1AE;
+                }
+            }
+        }
+        .info {
+            width: 100%;
+            background: #fff;
+            margin-top: pxTorem(10px);
+            padding-left: pxTorem(10px);
+            @include sizing;
+            >p {
+                width: 100%;
+                height: pxTorem(40px);
+                font-size: pxTorem(16px);
+                line-height: pxTorem(40px);
+                border-bottom: 1px solid #ccc;
+            }
+            .foodList {
+                width: 100%;
+                @include box_flex;
+                @include direction(column);
+                li {
+                    width: 100%;
+                    @include box_flex;
+                    @include justify(space-between);
+                    border-bottom: 1px solid #ccc;
+                    img {
+                        padding: pxTorem(10px) 0 pxTorem(10px) 0;
+                        @include sizing;
+                    }
+                    .cen {
+                        font-size: pxTorem(17px);
+                        padding-top: pxTorem(15px);
+                        line-height: pxTorem(26px);
+                        p:nth-child(2) {
+                            font-size: pxTorem(14px);
+                        }
+                        p:nth-child(3) {
+                            padding-top: pxTorem(10px);
+                            @include sizing;
+                            span:nth-child(1) {
+                                font-size: pxTorem(20px);
+                                color: #06C1AE;
+                            }
+                            span:nth-child(2) {
+                                font-size: pxTorem(14px);
+                            }
+                        }
+                    }
+                    .rig {
+                        padding-right: pxTorem(10px);
+                        @include sizing;
+                        padding-top: pxTorem(80px);
+                        @include sizing;
+                        font-size: pxTorem(14px);
+                    }
                 }
             }
         }

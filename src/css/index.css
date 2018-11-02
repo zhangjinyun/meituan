@@ -245,7 +245,8 @@ section {
   -webkit-flex: 1 1 0%;
   flex: 1 1 0%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background: #F0EFED; }
   section .content {
     width: 100%; }
     section .content .refresh,
@@ -255,7 +256,7 @@ section {
       line-height: 1.06667rem;
       text-align: center;
       font-size: 0.42667rem;
-      background: #eee;
+      background: #fff;
       color: #06C1AE; }
     section .content .refresh {
       position: absolute;
@@ -264,11 +265,11 @@ section {
       position: absolute;
       bottom: -1.06667rem; }
     section .content .pic {
-      width: 100%;
-      border-bottom: 2px solid #ccc; }
+      width: 100%; }
     section .content .swiper-container {
       width: 100%;
-      height: 4.8rem; }
+      height: 4.8rem;
+      background: #fff; }
       section .content .swiper-container .swiper-wrapper,
       section .content .swiper-container .swiper-slide {
         width: 100%;
@@ -305,3 +306,75 @@ section {
         margin: 0 0.21333rem; }
       section .content .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
         background: #06C1AE; }
+    section .content .info {
+      width: 100%;
+      background: #fff;
+      margin-top: 0.26667rem;
+      padding-left: 0.26667rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      section .content .info > p {
+        width: 100%;
+        height: 1.06667rem;
+        font-size: 0.42667rem;
+        line-height: 1.06667rem;
+        border-bottom: 1px solid #ccc; }
+      section .content .info .foodList {
+        width: 100%;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-flex-direction: column;
+        flex-direction: column; }
+        section .content .info .foodList li {
+          width: 100%;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          border-bottom: 1px solid #ccc; }
+          section .content .info .foodList li img {
+            padding: 0.26667rem 0 0.26667rem 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box; }
+          section .content .info .foodList li .cen {
+            font-size: 0.45333rem;
+            padding-top: 0.4rem;
+            line-height: 0.69333rem; }
+            section .content .info .foodList li .cen p:nth-child(2) {
+              font-size: 0.37333rem; }
+            section .content .info .foodList li .cen p:nth-child(3) {
+              padding-top: 0.26667rem;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -ms-box-sizing: border-box;
+              -o-box-sizing: border-box;
+              box-sizing: border-box; }
+              section .content .info .foodList li .cen p:nth-child(3) span:nth-child(1) {
+                font-size: 0.53333rem;
+                color: #06C1AE; }
+              section .content .info .foodList li .cen p:nth-child(3) span:nth-child(2) {
+                font-size: 0.37333rem; }
+          section .content .info .foodList li .rig {
+            padding-right: 0.26667rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-top: 2.13333rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 0.37333rem; }

@@ -1,0 +1,43 @@
+[{
+    "img": "food1.jpg",
+    "tit": "全聚德",
+    "address": "[东城区]精品烤鸭1份",
+    "price": 398,
+    "money": 498,
+    "num": 3311
+}, {
+    "img": "food2.jpg",
+    "tit": "奶茶",
+    "address": "[昌平]10元代金券",
+    "price": 8,
+    "money": 15,
+    "num": 61127
+}, {
+    "img": "food3.jpg",
+    "tit": "华莱士",
+    "address": "[东城区]精品餐1份",
+    "price": 13,
+    "money": 31,
+    "num": 3757
+}, {
+    "img": "food4.jpg",
+    "tit": "醉面",
+    "address": "[5店通用]精品烤鸭1份",
+    "price": 18,
+    "money": 21,
+    "num": 21367
+}, {
+    "img": "food5.jpg",
+    "tit": "锅包",
+    "address": "[海淀]精品烤鸭",
+    "price": 398,
+    "money": 498,
+    "num": 3311
+}, {
+    "img": "food3.jpg",
+    "tit": "超值4件套",
+    "address": "[北京等]超值4件套",
+    "price": 24,
+    "money": 38,
+    "num": 36178
+}]
