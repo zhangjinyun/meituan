@@ -170,4 +170,138 @@ html {
 
 .wrap {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 1.33333rem;
+  background: #06C1AE;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.48rem;
+  color: #fff; }
+  header .address {
+    width: 1.6rem;
+    text-align: center; }
+  header .search {
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    background: #05A494;
+    padding: 0.13333rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0.16rem;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    margin-left: 0.21333rem; }
+    header .search .iconfont {
+      font-size: 0.42667rem;
+      padding: 0 0.13333rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+    header .search input {
+      -webkit-flex: 1 1 0%;
+      flex: 1 1 0%; }
+  header dl {
+    width: 1.6rem;
+    text-align: center;
+    padding-left: 0.26667rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    header dl .iconfont {
+      font-size: 0.53333rem; }
+    header dl dd {
+      font-size: 0.37333rem; }
+
+section {
+  width: 100%;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  overflow: hidden;
+  position: relative; }
+  section .content {
+    width: 100%; }
+    section .content .refresh,
+    section .content .load {
+      width: 100%;
+      height: 1.06667rem;
+      line-height: 1.06667rem;
+      text-align: center;
+      font-size: 0.42667rem;
+      background: #eee;
+      color: #06C1AE; }
+    section .content .refresh {
+      position: absolute;
+      top: -1.06667rem; }
+    section .content .load {
+      position: absolute;
+      bottom: -1.06667rem; }
+    section .content .pic {
+      width: 100%;
+      border-bottom: 2px solid #ccc; }
+    section .content .swiper-container {
+      width: 100%;
+      height: 4.8rem; }
+      section .content .swiper-container .swiper-wrapper,
+      section .content .swiper-container .swiper-slide {
+        width: 100%;
+        height: 4.53333rem; }
+      section .content .swiper-container .swiper-slide {
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        section .content .swiper-container .swiper-slide dl {
+          width: 20%;
+          text-align: center;
+          padding-top: 0.21333rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box; }
+          section .content .swiper-container .swiper-slide dl dt img {
+            width: 50%; }
+          section .content .swiper-container .swiper-slide dl dd {
+            padding-top: 0.13333rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 0.4rem; }
+      section .content .swiper-container .swiper-pagination span {
+        width: 0.21333rem;
+        height: 0.21333rem;
+        margin: 0 0.21333rem; }
+      section .content .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+        background: #06C1AE; }

@@ -3,4 +3,122 @@
 .wrap {
     width: 100%;
     height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    background: #06C1AE;
+    @include box_flex;
+    @include align(center);
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    font-size: pxTorem(18px);
+    color: #fff;
+    .address {
+        width: pxTorem(60px);
+        text-align: center;
+    }
+    .search {
+        @include flex;
+        background: #05A494;
+        padding: pxTorem(5px);
+        @include sizing;
+        border-radius: pxTorem(6px);
+        @include box_flex;
+        margin-left: pxTorem(8px);
+        .iconfont {
+            font-size: pxTorem(16px);
+            padding: 0 pxTorem(5px);
+            @include sizing;
+        }
+        input {
+            @include flex;
+        }
+    }
+    dl {
+        width: pxTorem(60px);
+        text-align: center;
+        padding-left: pxTorem(10px);
+        @include sizing;
+        .iconfont {
+            font-size: pxTorem(20px);
+        }
+        dd {
+            font-size: pxTorem(14px);
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    overflow: hidden;
+    position: relative;
+    .content {
+        width: 100%;
+        .refresh,
+        .load {
+            width: 100%;
+            height: pxTorem(40px);
+            line-height: pxTorem(40px);
+            text-align: center;
+            font-size: pxTorem(16px);
+            background: #eee;
+            color: #06C1AE;
+        }
+        .refresh {
+            position: absolute;
+            top: pxTorem(-40px);
+        }
+        .load {
+            position: absolute;
+            bottom: pxTorem(-40px);
+        }
+        .pic {
+            width: 100%;
+            border-bottom: 2px solid #ccc;
+        }
+        .swiper-container {
+            width: 100%;
+            height: pxTorem(180px);
+            .swiper-wrapper,
+            .swiper-slide {
+                width: 100%;
+                height: pxTorem(170px);
+            }
+            .swiper-slide {
+                @include box_flex;
+                @include flexWrap(wrap);
+                dl {
+                    width: 20%;
+                    text-align: center;
+                    padding-top: pxTorem(8px);
+                    @include sizing;
+                    dt {
+                        img {
+                            width: 50%;
+                        }
+                    }
+                    dd {
+                        padding-top: pxTorem(5px);
+                        @include sizing;
+                        font-size: pxTorem(15px);
+                    }
+                }
+            }
+            .swiper-pagination {
+                span {
+                    width: pxTorem(8px);
+                    height: pxTorem(8px);
+                    margin: 0 pxTorem(8px);
+                }
+                .swiper-pagination-bullet-active {
+                    background: #06C1AE;
+                }
+            }
+        }
+    }
 }
